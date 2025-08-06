@@ -1,40 +1,72 @@
-# Core Deep Learning Libraries
-tensorflow==2.13.0
-keras==2.13.1
+# Essential Libraries for Fish Classification Streamlit App
+# Core requirements for deployment - tested and working versions
 
-# Data Processing and Visualization
+# Streamlit Framework (REQUIRED)
+streamlit==1.28.0
+
+# Deep Learning Framework (REQUIRED)
+tensorflow==2.13.0
+
+# Core Data Processing (REQUIRED)
 numpy==1.24.3
 pandas==2.0.3
+
+# Image Processing (REQUIRED)
+pillow==10.0.1
+
+# Plotting and Visualization (REQUIRED for charts)
 matplotlib==3.7.2
-seaborn==0.12.2
-opencv-python==4.8.0.76
-Pillow==10.0.0
 
-# Machine Learning Utilities
-scikit-learn==1.3.0
+# System and File Operations (Usually included with Python, but explicit for deployment)
+os-sys  # Built-in, no installation needed
+json5==0.9.6  # For JSON handling
+datetime  # Built-in, no installation needed
 
-# Web Application Framework
-streamlit==1.25.0
+# Additional Streamlit Dependencies (AUTO-INSTALLED with streamlit)
+# These are automatically installed with streamlit, but listed for reference:
+# altair>=4.0.0
+# blinker>=1.0.0
+# click>=7.0
+# importlib-metadata>=1.4
+# protobuf>=3.20,<5
+# pyarrow>=6.0
+# requests>=2.4
+# tornado>=6.0.3
+# typing-extensions>=4.3.0
+# tzlocal>=1.1
 
-# Progress Bars and Utilities
-tqdm==4.65.0
+# MINIMAL REQUIREMENTS - Absolute bare minimum to run the app
+# Use this if you're having dependency conflicts
+
+streamlit==1.28.0
+tensorflow==2.13.0
+numpy==1.24.3
+pillow==10.0.1
+matplotlib==3.7.2
+
+# DEPLOYMENT REQUIREMENTS
+# Optimized for cloud deployment (Streamlit Cloud, Heroku, Railway, etc.)
+
+# Core Framework
+streamlit>=1.28.0,<2.0.0
+
+# Machine Learning
+tensorflow>=2.13.0,<2.16.0
+numpy>=1.24.0,<1.26.0
+pandas>=2.0.0,<2.2.0
 
 # Image Processing
-albumentations==1.3.1
+pillow>=10.0.0,<11.0.0
 
-# Model Visualization
-pydot==1.4.2
-graphviz==0.20.1
+# Visualization
+matplotlib>=3.7.0,<3.9.0
 
-# Jupyter Notebook (optional)
-jupyter==1.0.0
-ipykernel==6.25.0
+# Optional but recommended for better performance
+scipy>=1.10.0,<1.12.0
+scikit-learn>=1.3.0,<1.4.0
 
-# Additional Utilities
-requests==2.31.0
-zipfile36==0.1.3
+# For JSON handling (if needed)
+ujson>=5.7.0
 
-pygments==2.15.1
-markdown-it-py==2.2.0
-mdurl==0.1.2
-rich==13.4.2
+# Memory optimization for deployment
+psutil>=5.9.0
