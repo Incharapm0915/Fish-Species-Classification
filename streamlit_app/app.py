@@ -14,15 +14,6 @@ from datetime import datetime
 import warnings
 import time
 warnings.filterwarnings('ignore')
-import tensorflow as tf
-import streamlit as st
-
-@st.cache_resource
-def load_model():
-    model_path = "results/models/MobileNet_best.h5"
-    return tf.keras.models.load_model(model_path)
-
-model = load_model()
 
 # Try to import TensorFlow with cloud-specific handling
 try:
@@ -633,4 +624,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
