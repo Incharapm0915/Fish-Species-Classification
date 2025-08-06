@@ -1,0 +1,42 @@
+# Streamlit Configuration for Your Beautiful Fish Classification App
+# Create this file as: .streamlit/config.toml
+
+[global]
+# Disable usage stats for privacy
+disableWatchdogWarning = true
+
+[server]
+# Server configuration
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+
+[browser]
+# Browser configuration  
+gatherUsageStats = false
+showErrorDetails = true
+
+[theme]
+# Theme matching your beautiful app design
+primaryColor = "#667eea"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
+
+[client]
+# Client configuration
+caching = true
+displayEnabled = true
+
+[runner]
+# Runner configuration
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+
+[logger]
+# Logging configuration
+level = "info"
+messageFormat = "%(asctime)s.%(msecs)03d %(name)s: %(levelname)s: %(message)s"

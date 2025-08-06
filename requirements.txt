@@ -1,72 +1,32 @@
-# Essential Libraries for Fish Classification Streamlit App
-# Core requirements for deployment - tested and working versions
+# EXACT REQUIREMENTS FOR YOUR BEAUTIFUL FISH CLASSIFICATION APP
+# These are the precise versions needed for your existing app.py code
 
-# Streamlit Framework (REQUIRED)
+# Core Streamlit Framework
 streamlit==1.28.0
 
-# Deep Learning Framework (REQUIRED)
+# Deep Learning and AI
 tensorflow==2.13.0
-
-# Core Data Processing (REQUIRED)
 numpy==1.24.3
+
+# Data Processing and Analysis
 pandas==2.0.3
 
-# Image Processing (REQUIRED)
-pillow==10.0.1
+# Image Processing and Enhancement
+Pillow==10.0.1
 
-# Plotting and Visualization (REQUIRED for charts)
+# Plotting and Visualization
 matplotlib==3.7.2
 
-# System and File Operations (Usually included with Python, but explicit for deployment)
-os-sys  # Built-in, no installation needed
-json5==0.9.6  # For JSON handling
-datetime  # Built-in, no installation needed
+# Date and Time Handling (for your datetime imports)
+python-dateutil==2.8.2
 
-# Additional Streamlit Dependencies (AUTO-INSTALLED with streamlit)
-# These are automatically installed with streamlit, but listed for reference:
-# altair>=4.0.0
-# blinker>=1.0.0
-# click>=7.0
-# importlib-metadata>=1.4
-# protobuf>=3.20,<5
-# pyarrow>=6.0
-# requests>=2.4
-# tornado>=6.0.3
-# typing-extensions>=4.3.0
-# tzlocal>=1.1
+# JSON Processing (enhanced JSON handling)
+jsonschema==4.17.3
 
-# MINIMAL REQUIREMENTS - Absolute bare minimum to run the app
-# Use this if you're having dependency conflicts
+# Additional dependencies that your app needs
+scipy==1.10.1
+six==1.16.0
 
-streamlit==1.28.0
-tensorflow==2.13.0
-numpy==1.24.3
-pillow==10.0.1
-matplotlib==3.7.2
-
-# DEPLOYMENT REQUIREMENTS
-# Optimized for cloud deployment (Streamlit Cloud, Heroku, Railway, etc.)
-
-# Core Framework
-streamlit>=1.28.0,<2.0.0
-
-# Machine Learning
-tensorflow>=2.13.0,<2.16.0
-numpy>=1.24.0,<1.26.0
-pandas>=2.0.0,<2.2.0
-
-# Image Processing
-pillow>=10.0.0,<11.0.0
-
-# Visualization
-matplotlib>=3.7.0,<3.9.0
-
-# Optional but recommended for better performance
-scipy>=1.10.0,<1.12.0
-scikit-learn>=1.3.0,<1.4.0
-
-# For JSON handling (if needed)
-ujson>=5.7.0
-
-# Memory optimization for deployment
-psutil>=5.9.0
+# Optional but recommended for stability
+setuptools>=65.0.0
+wheel>=0.38.0
