@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "created_at": "2025-08-06T01:47:37.955455",
+    "total_training_time_minutes": 151.37318506240845
+  },
+  "dataset_info": {
+    "num_classes": 11,
+    "class_names": [
+      "animal fish",
+      "animal fish bass",
+      "fish sea_food black_sea_sprat",
+      "fish sea_food gilt_head_bream",
+      "fish sea_food hourse_mackerel",
+      "fish sea_food red_mullet",
+      "fish sea_food red_sea_bream",
+      "fish sea_food sea_bass",
+      "fish sea_food shrimp",
+      "fish sea_food striped_red_mullet",
+      "fish sea_food trout"
+    ],
+    "total_training_samples": 6225,
+    "augmentation_level": "HEAVY",
+    "use_class_weights": true
+  },
+  "training_results": {
+    "CNN_Scratch": {
+      "best_val_accuracy": 0.13124999403953552,
+      "best_val_top3_accuracy": 0.2487500011920929,
+      "final_train_accuracy": 0.49548134207725525,
+      "training_time_minutes": 8.51817086537679,
+      "epochs_trained": 4,
+      "total_params": 131019,
+      "status": "SUCCESS"
+    },
+    "VGG16": {
+      "best_val_accuracy": 0.9137499928474426,
+      "best_val_top3_accuracy": 0.9975000023841858,
+      "final_train_accuracy": 0.8316742181777954,
+      "training_time_minutes": 100.42097709178924,
+      "epochs_trained": 12,
+      "total_params": 14851915,
+      "status": "SUCCESS"
+    },
+    "ResNet50": {
+      "best_val_accuracy": 0.5299999713897705,
+      "best_val_top3_accuracy": 0.8537499904632568,
+      "final_train_accuracy": 0.375,
+      "training_time_minutes": 33.79712732632955,
+      "epochs_trained": 12,
+      "total_params": 24124299,
+      "status": "SUCCESS"
+    },
+    "MobileNet": {
+      "best_val_accuracy": 0.9937499761581421,
+      "best_val_top3_accuracy": 1.0,
+      "final_train_accuracy": 0.9681729078292847,
+      "training_time_minutes": 8.600843048095703,
+      "epochs_trained": 10,
+      "total_params": 3499211,
+      "status": "SUCCESS"
+    }
+  },
+  "best_model": {
+    "name": "MobileNet",
+    "accuracy": 0.994
+  }
+}
