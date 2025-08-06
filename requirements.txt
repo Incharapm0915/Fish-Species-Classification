@@ -34,29 +34,7 @@ ipykernel==6.25.0
 requests==2.31.0
 zipfile36==0.1.3
 
-# Fixed requirements.txt with compatible versions
-# Use this to avoid package conflicts
-
-# Core ML Libraries
-tensorflow==2.13.0
-numpy==1.24.3
-pandas==2.0.3
-scikit-learn==1.3.0
-
-# Image Processing
-opencv-python==4.8.0.76
-Pillow==10.0.1
-matplotlib==3.7.2
-
-# Web Application
-streamlit==1.25.0
-plotly==5.15.0
-
-# Supporting packages with compatible versions
 pygments==2.15.1
 markdown-it-py==2.2.0
 mdurl==0.1.2
 rich==13.4.2
-
-# Other utilities
-tqdm==4.65.0
