@@ -19,7 +19,7 @@ warnings.filterwarnings('ignore')
 
 # Page configuration
 st.set_page_config(
-    page_title="🐟 AI Fish Classifier",
+    page_title="🐟 Fish Species Classifier",
     page_icon="🐟",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -451,7 +451,7 @@ def main():
     """Main Streamlit application"""
     
     # Beautiful Header
-    st.markdown('<h1 class="main-header">🐟 AI Fish Species Classifier</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🐟 Fish Species Classifier</h1>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle">Comparing Custom CNN vs Transfer Learning Models</p>', 
                 unsafe_allow_html=True)
     
@@ -787,3 +787,4 @@ Location: results/models/ or results/compressed_models/
 
 if __name__ == "__main__":
     main()
+
