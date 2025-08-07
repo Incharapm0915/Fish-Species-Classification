@@ -1,0 +1,4 @@
+Split,Total Images,Number of Classes,Avg Images per Class,Min Images in Class,Max Images in Class
+Train,6225,11,565.9090909090909,30,1096
+Test,3187,11,289.72727272727275,13,520
+Val,1092,11,99.27272727272727,10,187

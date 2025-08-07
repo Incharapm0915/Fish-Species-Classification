@@ -1,0 +1,76 @@
+{
+  "image_dimensions": {
+    "height": 224,
+    "width": 224,
+    "channels": 3
+  },
+  "training_params": {
+    "batch_size": 32,
+    "rescale": 0.00392156862745098,
+    "validation_split": 0.2,
+    "augmentation_level": "MODERATE"
+  },
+  "augmentation_params": {
+    "rescale": 0.00392156862745098,
+    "rotation_range": 20,
+    "width_shift_range": 0.2,
+    "height_shift_range": 0.2,
+    "zoom_range": 0.2,
+    "horizontal_flip": true,
+    "brightness_range": [
+      0.9,
+      1.1
+    ],
+    "fill_mode": "nearest"
+  },
+  "dataset_info": {
+    "num_classes": 11,
+    "class_names": [
+      "animal fish",
+      "animal fish bass",
+      "fish sea_food black_sea_sprat",
+      "fish sea_food gilt_head_bream",
+      "fish sea_food hourse_mackerel",
+      "fish sea_food red_mullet",
+      "fish sea_food red_sea_bream",
+      "fish sea_food sea_bass",
+      "fish sea_food shrimp",
+      "fish sea_food striped_red_mullet",
+      "fish sea_food trout"
+    ],
+    "class_indices": {
+      "animal fish": 0,
+      "animal fish bass": 1,
+      "fish sea_food black_sea_sprat": 2,
+      "fish sea_food gilt_head_bream": 3,
+      "fish sea_food hourse_mackerel": 4,
+      "fish sea_food red_mullet": 5,
+      "fish sea_food red_sea_bream": 6,
+      "fish sea_food sea_bass": 7,
+      "fish sea_food shrimp": 8,
+      "fish sea_food striped_red_mullet": 9,
+      "fish sea_food trout": 10
+    },
+    "total_training_samples": 6225,
+    "total_validation_samples": 1092,
+    "total_test_samples": 3187
+  },
+  "class_weights": {
+    "0": 0.5163404114134041,
+    "1": 18.863636363636363,
+    "2": 0.9945678223358364,
+    "3": 0.9998393832316094,
+    "4": 0.9876249405045217,
+    "5": 0.9773904851625059,
+    "6": 0.9910842222576023,
+    "7": 1.0518756336600203,
+    "8": 0.9824810606060606,
+    "9": 1.0345687219544624,
+    "10": 0.975705329153605
+  },
+  "use_class_weights": true,
+  "performance_metrics": {
+    "avg_batch_time": 0.6893157164255778,
+    "images_per_second": 46.42284984583678
+  }
+}

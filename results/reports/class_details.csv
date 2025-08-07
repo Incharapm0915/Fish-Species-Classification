@@ -1,0 +1,34 @@
+Split,Class,Image Count
+train,animal fish,1096
+train,animal fish bass,30
+train,fish sea_food black_sea_sprat,569
+train,fish sea_food gilt_head_bream,566
+train,fish sea_food hourse_mackerel,573
+train,fish sea_food red_mullet,579
+train,fish sea_food red_sea_bream,571
+train,fish sea_food sea_bass,538
+train,fish sea_food shrimp,576
+train,fish sea_food striped_red_mullet,547
+train,fish sea_food trout,580
+test,animal fish,520
+test,animal fish bass,13
+test,fish sea_food black_sea_sprat,298
+test,fish sea_food gilt_head_bream,305
+test,fish sea_food hourse_mackerel,286
+test,fish sea_food red_mullet,291
+test,fish sea_food red_sea_bream,273
+test,fish sea_food sea_bass,327
+test,fish sea_food shrimp,289
+test,fish sea_food striped_red_mullet,293
+test,fish sea_food trout,292
+val,animal fish,187
+val,animal fish bass,10
+val,fish sea_food black_sea_sprat,105
+val,fish sea_food gilt_head_bream,94
+val,fish sea_food hourse_mackerel,97
+val,fish sea_food red_mullet,90
+val,fish sea_food red_sea_bream,113
+val,fish sea_food sea_bass,97
+val,fish sea_food shrimp,100
+val,fish sea_food striped_red_mullet,101
+val,fish sea_food trout,98
