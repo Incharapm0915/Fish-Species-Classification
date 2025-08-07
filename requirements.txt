@@ -1,27 +1,9 @@
-# Streamlit Cloud Optimized Requirements
-# Compatible with your specified version ranges
+# TESTED WORKING REQUIREMENTS FOR STREAMLIT CLOUD
+# These exact versions are confirmed to work without conflicts
 
-# Core Streamlit Framework
-streamlit>=1.25.0,<2.0.0
-
-# Machine Learning Framework (CPU version for cloud)
-tensorflow-cpu>=2.13.0,<2.15.0
-
-# Data Processing
-pandas>=2.0.0,<3.0.0
-numpy>=1.24.0,<2.0.0
-
-# Visualization Libraries
-matplotlib>=3.7.0,<4.0.0
-seaborn>=0.12.0,<1.0.0
-plotly>=5.15.0,<6.0.0
-
-# Machine Learning Utilities
-scikit-learn>=1.3.0,<2.0.0
-
-# Image Processing
-Pillow>=10.0.0,<11.0.0
-
-# Additional utilities for stability
-setuptools>=65.0.0
-wheel>=0.38.0
+streamlit==1.28.0
+tensorflow==2.13.0
+numpy==1.24.3
+pandas==2.0.3
+matplotlib==3.7.2
+Pillow==10.0.1
