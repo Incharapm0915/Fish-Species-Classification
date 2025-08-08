@@ -451,7 +451,7 @@ def main():
     """Main Streamlit application"""
     
     # Beautiful Header
-    st.markdown('<h1 class="main-header">🐟 Fish Species Classifier</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🐟 Multiclass Fish Image Classification</h1>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle">Comparing Custom CNN vs Transfer Learning Models</p>', 
                 unsafe_allow_html=True)
     
@@ -787,4 +787,5 @@ Location: results/models/ or results/compressed_models/
 
 if __name__ == "__main__":
     main()
+
 
